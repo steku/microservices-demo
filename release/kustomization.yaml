@@ -1,0 +1,39 @@
+---
+resources:
+- kubernetes-manifests.yaml
+namespace: microservices-demo
+images:
+- name: gcr.io/google-samples/microservices-demo/emailservice
+  newName: gcr.io/tekton-271223/microservices-demo/emailservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/checkoutservice
+  newName: gcr.io/tekton-271223/microservices-demo/checkoutservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/recommendationservice
+  newName: gcr.io/tekton-271223/microservices-demo/recommendationservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/frontend
+  newName: gcr.io/tekton-271223/microservices-demo/frontend
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/paymentservice
+  newName: gcr.io/tekton-271223/microservices-demo/paymentservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/productcatalogservice
+  newName: gcr.io/tekton-271223/microservices-demo/productcatalogservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/carteservice
+  newName: gcr.io/tekton-271223/microservices-demo/cartservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/loadgenerator
+  newName: gcr.io/tekton-271223/microservices-demo/loadgenerator
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/currencyservice
+  newName: gcr.io/tekton-271223/microservices-demo/currencyservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/shippingservice
+  newName: gcr.io/tekton-271223/microservices-demo/shippingservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+- name: gcr.io/google-samples/microservices-demo/adservice
+  newName: gcr.io/tekton-271223/microservices-demo/adservice
+  newTag: 986db46a98052357ecf9a028eceb3c78ef794e98
+---
